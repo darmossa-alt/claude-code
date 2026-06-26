@@ -1,0 +1,234 @@
+/* ==========================================================
+   1. HEADER & GLOBAL (Couleurs, Logos et Curseur)
+   ========================================================== */
+body { 
+    background-color: white !important; 
+    color: #232323; 
+    overflow-x: hidden;
+}
+
+/* Rétablissement du curseur normal */
+* { cursor: auto !important; }
+a, button, [role="button"], input[type="submit"], input[type="button"], .pointer { 
+    cursor: pointer !important; 
+}
+
+/* Barre de navigation et Menu Bleu Ciel */
+.header-top, nav.header-nav {
+    background-color: #87CEEB !important;
+}
+
+/* Réduction de la hauteur du header-top à 100px */
+.header-top {
+    height: 100px !important;
+    max-height: 100px !important;
+    min-height: 100px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.header-top a, .header-nav a, .dropdown-item {
+    color: #000000 !important;
+}
+
+/* Alignement des logos */
+h1.ai-style-change-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.new-logo-ms {
+    height: 48px;
+    width: auto;
+    margin-right: 50px;
+}
+
+h1.ai-style-change-1 img.logo {
+    width: 120px !important;
+}
+
+/* Positionnement spécifique de la barre de recherche */
+#search_widget {
+    position: relative !important;
+    left: 115px !important; 
+    top: -38px !important;  
+}
+
+/* ==========================================================
+   2. FOND DE PAGE ET CARROUSEL
+   ========================================================== */
+section#wrapper {
+    background-color: #87CEEB !important;
+    background-image: url("https://ottopuntouno.fr/themes/classic/assets/img/image.jpg") !important;
+    background-size: 100% auto !important;
+    background-position: center 151.2px !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+.carousel-control { display: none !important; }
+
+/* Décalage de l'élément actif du carrousel */
+li.carousel-item.active {
+    position: relative !important;
+    left: 225px !important; 
+    top: -19px !important;  
+}
+
+/* ==========================================================
+   3. BANNIÈRE PERSONNALISÉE
+   ========================================================== */
+#custom-photo-banner {
+    width: 90% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 500px !important;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important; 
+    background-color: #f0f0f0 !important;
+    display: flex !important;
+    position: relative !important;
+    top: -75px !important; 
+    z-index: 999 !important;
+    overflow: hidden !important;
+    border: 1px solid #ddd;
+}
+
+/* ==========================================================
+   4. SECTIONS PRODUITS (Accueil & Centrage)
+   ========================================================== */
+section.featured-products.clearfix.mt-3 {
+    display: none !important;
+}
+
+section.featured-products.clearfix {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    margin-top: 600px !important;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Titre de section centré avec fond blanc */
+.products-section-title, .h2.products-section-title {
+    background: #ffffff !important;
+    color: #000000 !important;
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto 30px auto !important;
+    padding: 10px 20px !important;
+    border: 1px solid #ccc !important;
+    position: relative !important;
+    top: -38px !important;
+    text-align: center !important;
+}
+
+/* Grille de produits recentrée */
+.products.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+}
+
+/* Lien "Tous les produits" avec fond blanc centré */
+a.all-product-link {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ccc !important;
+    display: table !important;
+    margin: 20px auto !important;
+    float: none !important;
+    text-decoration: none !important;
+}
+
+/* Fiche produit avec FOND TRANSPARENT FORCE (1%) */
+.product-miniature.js-product-miniature,
+article.product-miniature {
+    flex: 0 1 350px !important;
+    width: 350px !important;
+    max-width: 350px !important;
+    min-height: 670px !important;
+    margin: 15px !important; 
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    background: rgba(30, 30, 30, 0.01) !important;
+    background-color: rgba(30, 30, 30, 0.01) !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+/* Cadre blanc de l'image (Taille fixée à 310x350) */
+.product-miniature.js-product-miniature .thumbnail-container {
+    width: 310px !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #ffffff !important; 
+    overflow: visible !important;
+    border-radius: 4px;
+    margin: 0 auto !important;
+}
+
+.product-miniature.js-product-miniature .product-description {
+    position: static !important;
+    width: 100% !important;
+    padding: 15px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.product-miniature.js-product-miniature .product-title a,
+.product-miniature.js-product-miniature .price {
+    color: #000000 !important;
+    text-align: center !important;
+}
+
+/* ==========================================================
+   5. PAGES PRODUITS & INTERNES
+   ========================================================== */
+.product-container .col-md-6:last-child {
+    background-color: #ffffff !important;
+    padding: 25px !important;
+    border-radius: 8px !important;
+    color: #232323 !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+.product-container .col-md-6:last-child * {
+    color: #000000 !important;
+}
+
+body:not(#index) #main section#content, 
+body:not(#index) .page-content { 
+    background-color: white !important;
+    max-width: 1200px !important; 
+    margin: 0 auto !important; 
+    width: 95% !important;
+    padding: 25px !important;
+}
