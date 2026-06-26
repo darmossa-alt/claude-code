@@ -16,3 +16,11 @@ Feuille de styles personnalisée pour la boutique PrestaShop [ottopuntouno.fr](h
 
 Copier le contenu de `custom.css` dans le module CSS personnalisé de PrestaShop :
 **Back-office → Apparence → Thème & Logo → CSS personnalisé**
+
+## Couleurs principales
+
+| Couleur | Valeur | Utilisation |
+|---------|--------|-------------|
+| Bleu ciel | `#87CEEB` | Header, fond de page |
+| Noir | `#232323` | Texte principal |
+| Blanc | `#ffffff` | Fond des fiches produits |
